@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root  {
+    --white: #FFFFFF;
+    --black: #000000;
+    --Navy-950: #0E1323;
+    --Navy-900: #1C204B;
+    --Navy-800: #33397A;
+    --Navy-200: #BBC0FF;
+    --Orange-300: #FF8B64;
+    --Purple-700: #7335D2;
+    --Purple-600: #5747EA;
+    --Purple-500: #7078C9;
+    --Blue-300: #55C2E6;
+    --Pink-400: #FF5E7D;
+    --Green-400: #4BCF82;
+    --Yellow-300: #F1C75B;
+    --Grey-200: #D8D8D8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--Navy-950);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Rubik", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Profile */
+section.profile {
+    background-color: var(--Navy-900);
+    border-radius: 15px;
+    padding-bottom: 1.5rem;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.profile-div {
+    display: flex;
+    gap: 1.5rem;
+    background-color: var(--Purple-600);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.profile-pic {
+    width: 4rem;
+    height: 4rem;
+    border: 3px solid var(--white);
+    border-radius: 50%;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    height: 3.125rem;
+    gap: 0.5rem;
+    margin: auto;
+}
+
+.report {
+    font-size: 0.9rem;
+    color: var(--Navy-200);
+    line-height: 1.125rem;
+    font-weight: 300;
+}
+
+.name {
+    font-size: 1.4rem;
+    color: var(--white);
+    line-height: 1.25rem;
+    font-weight: 300;
+}
+
+.sub {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    font-weight: 200;
+}
+
+.btn {
+    background: none;
+    border: none;
+    color: var(--Navy-200);
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.313rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    color: var(--white);
+}
+
+.btn.active {
+    color: var(--white);
+}
+
+.work, .play, .study, .exercise, .social, .self-care {
+    background-color: transparent;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.work-out, .play-out, .study-out, .exercise-out, .social-out, .self-care-out {
+    border-radius: 15px 15px 0 0;
+    padding-right: 1.2rem;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.work-icon, .exercise-icon {
+    margin-top: -0.7rem;
+}
+
+.play-icon {
+    margin-top: -1rem;
+}
+
+.self-care-icon {
+    margin-top: -1.4rem;
+}
+
+.work-main, .play-main, .study-main, .exercise-main, .social-main, .self-care-main {
+    position: relative;
+    background-color: var(--Navy-900);
+    border-radius: 15px;
+    width: 100%;
+    margin-top: -1.285rem;
+    padding: 1.5rem;
+}
+
+.work-main:hover, .play-main:hover, .study-main:hover, .exercise-main:hover, .social-main:hover, .self-care-main:hover {
+    background-color: var(--Navy-800);
+    cursor: pointer;
+}
+
+
+.work-info, .play-info, .study-info, .exercise-info, .social-info, .self-care-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.125rem;
+    color: var(--white);
+    line-height: 1.313rem;
+    font-weight: 400;
+}
+
+.work-menu, .play-menu, .study-menu, .exercise-menu, .social-menu, .self-care-menu {
+    font-size: 1.131rem;
+    color: var(--Navy-200);
+    background-color: transparent;
+    line-height: 0.313rem;
+    letter-spacing: 0.188rem;
+    border: none;
+}
+
+.work-menu:hover, .play-menu:hover, .study-menu:hover, .exercise-menu:hover, .social-menu:hover, .self-care-menu:hover {
+    color: var(--white);
+    cursor: pointer;
+}
+
+.work-sub, .play-sub, .study-sub, .exercise-sub, .social-sub, .self-care-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.work-hours, .play-hours, .study-hours, .exercise-hours, .social-hours, .self-care-hours {
+    font-size: 2rem;
+    line-height: 2.375rem;
+    font-weight: 200;
+}
+
+.work-period, .play-period, .study-period, .exercise-period, .social-period, .self-care-period {
+    font-size: 0.9rem;
+    color: var(--Navy-200);
+    line-height: 1.125rem;
+    font-weight: 300;
+}
+
+.work-icon, .play-icon, .study-icon {
+    width: 4.875rem;
+}
+
+.exercise-icon {
+    width: 4.978rem;
+    height: 3.343rem;
+}
+
+.social-icon {
+    width: 4.6rem;
+    height: 6.25rem;
+}
+
+.self-care-icon {
+    width: 4.5rem;
+    height: 4.125rem;
+}
+
+.work-out {
+    background-color: var(--Orange-300);
+}
+
+.play-out {
+    background-color: var(--Blue-300);
+}
+
+.study-out {
+    background-color: var(--Pink-400);
+}
+
+.exercise-out {
+    background-color: var(--Green-400);
+}
+
+.social-out {
+    background-color: var(--Purple-700);
+}
+
+.self-care-out {
+    background-color: var(--Yellow-300);
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        min-width: 38.25rem;
+        display: grid;
+        grid-template: 12.688rem auto auto / repeat(3, 13.313rem);
+        gap: 1.5rem;
+    }
+
+    .profile {
+        grid-area: 1 / 1 / 2 / 4;
+    }
+
+    .profile-info {
+        margin-left: 0;
+    }
+
+    .sub {
+        justify-content: center;
+    }
+
+    .btn {
+        width: 6.813rem;
+        text-align: center;
+    }
+
+    .work {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .play {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .study {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .exercise {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .social {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .self-care {
+        grid-area: 3 / 3 / 4 / 4;
+    }
+
+    .work-main, .play-main, .study-main, .exercise-main, .social-main, .self-care-main {
+        padding: 1.5rem;
+    }
+
+    .work-sub, .play-sub, .study-sub, .exercise-sub, .social-sub, .self-care-sub {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+        gap: 0.5rem;
+    }
+
+    .work-hours, .play-hours, .study-hours, .exercise-hours, .social-hours, .self-care-hours {
+        font-size: 3.5rem;
+        line-height: 4.125rem;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        min-width: 69.75rem;
+        grid-template: repeat(2, 15.25rem) / repeat(4, 15.938rem);
+        gap: 2rem;
+    }
+
+    .profile-div {
+        flex-direction: column;
+        height: 22.125rem;
+        gap: 2.5rem;
+    }
+
+    .profile-info {
+        height: 100%;
+        margin: 0;
+    }
+
+    .profile-pic {
+        width: 4.875rem;
+        height: 4.875rem;
+    }
+
+    .name {
+        flex-wrap: wrap;
+        font-size: 2.5rem;
+        line-height: 2.938rem;
+    }
+    .sub {
+        flex-direction: column;
+        gap: 1.313rem;
+        justify-content: start;
+        align-items: start;
+        margin-left: 2rem;
+    }
+
+    .btn {
+        text-align: left;
+    }
+
+    .profile {
+        grid-area: 1 / 1 / 3 / 2;
+    }
+
+    .work {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .play {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    .study {
+        grid-area: 1 / 4 / 2 / 5;
+    }
+
+    .exercise {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .social {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .self-care {
+        grid-area: 2 / 4 / 3 / 5;
+    }
+
+    .work-out, .play-out, .study-out, .exercise-out, .social-out, .self-care-out {
+        height: 4.375rem;
+    }
+
+    .work-icon, .study-icon {
+        width: 5.875rem;
+    }
+
+    .play-icon {
+        margin-top: 0rem;
+        width: 5.875rem;
+    }
+
+    .exercise-icon {
+        width: 4.978rem;
+        height: 3.343rem;
+        margin-top: -1rem;
+    }
+
+    .social-icon {
+        width: 4.6rem;
+        height: 6.25rem;
+    }
+
+    .self-care-icon {
+        width: 4.5rem;
+        height: 4.125rem;
+    }
+
+    .work-main, .play-main, .study-main, .exercise-main, .social-main, .self-care-main {
+        padding: 2rem;
+    }
+    
+}
+
+/*  Report for
+    Jeremy Robson
+
+    Daily
+    Weekly
+    Monthly
+
+    Work
+    5hrs <!-- daily -->
+    Previous - 7hrs <!-- daily -->
+    32hrs <!-- weekly -->
+    Previous - 36hrs <!-- weekly -->
+    103hrs <!-- monthly -->
+    Previous - 128hrs <!-- monthly -->
+
+    Play
+    1hr <!-- daily -->
+    Previous - 2hrs <!-- daily -->
+    10hrs <!-- weekly -->
+    Previous - 8hrs <!-- weekly -->
+    23hrs <!-- monthly -->
+    Previous - 29hrs <!-- monthly -->
+
+    Study
+    0hrs <!-- daily -->
+    Previous - 1hr <!-- daily -->
+    4hrs <!-- weekly -->
+    Previous - 7hrs <!-- weekly -->
+    13hrs <!-- monthly -->
+    Previous - 19hrs <!-- monthly -->
+
+    Exercise
+    1hr <!-- daily -->
+    Previous - 1hr <!-- daily -->
+    4hrs <!-- weekly -->
+    Previous - 5hrs <!-- weekly -->
+    11hrs <!-- monthly -->
+    Previous - 18hrs <!-- monthly -->
+
+    Social
+    1hr <!-- daily -->
+    Previous - 3hrs <!-- daily -->
+    5hrs <!-- weekly -->
+    Previous - 10hrs <!-- weekly -->
+    21hrs <!-- monthly -->
+    Previous - 23hrs <!-- monthly -->
+
+    Self Care
+    0hrs <!-- daily -->
+    Previous - 1hr <!-- daily -->
+    2hrs <!-- weekly -->
+    Previous - 2hrs <!-- weekly -->
+    7hrs <!-- monthly -->
+    Previous - 11hrs monthly
+   */
